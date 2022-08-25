@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "outFile": "./bin/game.js",
+    "allowJs": true,
+    "strict": true,
+    "paths": {
+      "@tableland/sdk": [
+        "node_modules\\@tableland\\sdk\\dist\\cjs\\main.d.ts"
+      ],
+      "ethers": [
+        "node_modules\\ethers\\lib\\index.d.ts"
+      ],
+      "node-fetch": [
+        "node_modules\\node-fetch\\lib\\index.js"
+      ],
+    },
+      "baseUrl": "."
+  },
+  "include": ["src/**/*.ts"],
+  "extends": "./node_modules/decentraland-ecs/types/tsconfig.json",
+  "compileOnSave": false
+}
