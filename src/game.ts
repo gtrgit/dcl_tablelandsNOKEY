@@ -14,11 +14,11 @@ if (!globalThis.fetch) {
 // Since Metamask is not accessible via browser injection,
 // it is required to supply a private key.
 // Do not expose this key directly but load from a `.env` file
-const privateKey = "5ae610def293d2106904460d47909e7b4067269065003407993b7825e55fa2d6";
+const privateKey = "PRIVATE KEY";
 const wallet = new Wallet(privateKey);
 
 // An RPC provider must be provided to establish a connection to the chain
-const provider = new providers.AlchemyProvider("goerli", "338mlROLYprSGZhk_tS1rWiHyDSVaX36");
+const provider = new providers.AlchemyProvider("goerli", "AlchemyKey");
 // By default, `connect` uses the Tableland testnet validator;
 // it will sign a message using the associated wallet
 
